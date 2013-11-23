@@ -27,10 +27,39 @@
 	<![endif]-->
 
 	<header></header>
-	<article class="page-content" role="main">
+	<aside class="article-meta content-width">
+		<ul class="meta-data">
+			<% if (@document.created_at) : %>
+			<li class="date"><%= @moment(@document.created_at).lang('ru').format('DD MMMM YYYY') %></li>
+			<% end %>
+			<% if (@document.disqusid) : %>
+			<li class="comments"><a href="<%= @document.path %>#disqus_thread" data-disqus-identifier="<%= @document.disqusid %>" >Комментарии</a></li>
+			<% end %>
+			<% if (@document.tags) : %>
+			<li class="tags-list">
+				<% for tag in @document.tags : %>
+					<a class="label-tag" href="<%= @getTagUrl(tag) %>"><%= tag %></a>
+				<% end %>
+			</li>
+			<% end %>
+		</ul>
+	</aside>
+	<article class="page-content content-width" role="main">
+		<% if (@document.kind == 'article') : %>
+		<h1><%- @document.title %></h1>
+		<% end %>
 		<%- @content %>
 	</article>
-	<footer></footer>
+	<footer class="page-footer content-width">
+		<p class="copyrights">
+			© <%- @site.author %>
+			<% if (@document.created_at) : %>
+				<%= @moment(@document.created_at).format('YYYY') %>
+			<% else : %>
+				2012—<%= @moment(@now).format('YYYY') %>
+			<% end %>
+		</p>
+	</footer>
 
 	<!-- jQuery -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>

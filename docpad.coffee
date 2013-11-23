@@ -9,9 +9,11 @@ docpadConfig = {
 
 	templateData:
 
+		cutTag: '<!-- cut -->'
+
 		# Specify some site properties
 		site:
-			# The production url of our website
+			# The production url of our website. Used in sitemap and rss feed
 			url: "http://website.com"
 
 			# Here are some old site urls that you would like to redirect from
@@ -22,6 +24,8 @@ docpadConfig = {
 
 			# The default title of our website
 			title: "Your Website"
+
+			author: "Author Name"
 
 			# The website description (for SEO)
 			description: """
@@ -59,7 +63,7 @@ docpadConfig = {
 		getPreparedTitle: ->
 			# if we have a document title, then we should use that and suffix the site's title onto it
 			if @document.title
-				"#{@document.title} | #{@site.title}"
+				"#{@document.title} / #{@site.title}"
 			# if our document does not have it's own title, then we should just use the site's title
 			else
 				@site.title
@@ -74,11 +78,33 @@ docpadConfig = {
 			# Merge the document keywords with the site keywords
 			@site.keywords.concat(@document.keywords or []).join(', ')
 
+		getPreparedArticleTags: (tags) ->
+			# Merge the document keywords with the site keywords
+			tags.concat(tags or []).join(', ')
+
+		# Post part before “cut”
+		cuttedContent: (content) ->            
+			if @hasReadMore content
+				cutIdx = content.search @cutTag
+				content[0..cutIdx-1]
+			else
+				content
+
+		# Has “cut”?
+		hasReadMore: (content) ->
+			content and ((content.search @cutTag) isnt -1)
+
+			
 	collections:
 		articles: ->
 			# get all posts by «kind», sort them by «created_at» and set to all «layout»
-			@getCollection("html").findAllLive({publish:true},[{created_at:-1}]).on "add", (model) ->
-				model.setMetaDefaults({layout:"article"})
+			@getCollection("html").findAllLive({kind:'article',publish:true},[{created_at:-1}]).on "add", (model) ->
+				model.setMetaDefaults({layout:"default"})
+
+		help: ->
+			# get all posts by «url», sort them by «created_at» and set to all «layout»
+			@getCollection("html").findAllLive({url: $startsWith: '/help'},[{created_at:-1}]).on "add", (model) ->
+				model.setMetaDefaults({layout:"default"})
 
 
 	# =================================

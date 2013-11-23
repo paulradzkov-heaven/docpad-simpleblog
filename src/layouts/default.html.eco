@@ -32,7 +32,7 @@
 			<% if (@document.created_at) : %>
 			<li class="date"><%= @moment(@document.created_at).lang('ru').format('DD MMMM YYYY') %></li>
 			<% end %>
-			<% if (@document.disqusid) : %>
+			<% if ((@site.disqus_shortname) and (@document.disqusid)) : %>
 			<li class="comments"><a href="<%= @document.path %>#disqus_thread" data-disqus-identifier="<%= @document.disqusid %>" >Комментарии</a></li>
 			<% end %>
 			<% if (@document.tags) : %>
@@ -60,6 +60,9 @@
 			<% end %>
 		</p>
 	</footer>
+	<% if ((@site.disqus_shortname) and (@document.kind == 'article')) : %>
+		<article id="disqus_thread"></article>
+	<% end %>
 	<% if (@document.kind == 'article') : %>
 	<nav class="read-next">
 		<h4 class="read-next-title">Read Also:</h4>
@@ -67,11 +70,6 @@
 	</nav>
 	<% end %>
 
-	<!-- jQuery -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/vendor/jquery.js"><\/script>')</script>
-
-	<!-- DocPad Scripts + Our Own -->
-	<%- @getBlock('scripts').add(@site.scripts).toHTML() %>
+	<%- @partial('scripts') %>
 </body>
 </html>

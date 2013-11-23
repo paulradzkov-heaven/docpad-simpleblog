@@ -188,6 +188,16 @@ pre code {
 	display: none;
 }
 
+/* disqus */
+#disqus_thread {
+	margin: 6em auto;
+	margin: 6rem auto;
+	padding: 2em;
+	padding: 2rem;
+	max-width: 50em;
+	max-width: 50rem;
+}
+
 /* nav links */
 .read-next {
 	margin: 8em 0em 0;

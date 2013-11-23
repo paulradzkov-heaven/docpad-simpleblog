@@ -25,7 +25,11 @@ docpadConfig = {
 			# The default title of our website
 			title: "Your Website"
 
+			# Author name used in copyrights and meta data
 			author: "Author Name"
+
+			# Change to your disqus name or comment it out to disable comments
+			disqus_shortname: "docpadsimpleblog"
 
 			# The website description (for SEO)
 			description: """

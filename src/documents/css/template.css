@@ -1,0 +1,118 @@
+/* Fonts and sizes */
+body {
+	font-family: sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+}
+h1,
+h2,
+h3,
+h4 {
+	font-family: sans-serif;
+	letter-spacing: -0.04em;
+	font-weight: 700;
+	line-height: 1.1;
+}
+code {
+	font-family: Consolas, 'courier new', monospace, serif;
+}
+
+/* Custom fonts applies and loaded only on large screens */
+@media screen and (min-width: 960px) {
+	body {
+		font-family: 'Open Sans', 'Roboto', sans-serif;
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: 'PT Sans Caption', 'Roboto', sans-serif;
+	}
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	text-decoration: none;
+}
+.page-content > h1 {
+	font-size: 3rem;
+}
+
+/* Layout */
+.page-content {
+	padding: 5rem 2rem;
+	border-top: 5px solid #000;
+}
+.page-content > * {
+	max-width: 800px;
+	max-width: 50rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* images */
+.page-content > figure {
+	max-width: none;
+	text-align: center;
+}
+.page-content > figure img {
+	display: inline-block;
+}
+figure img {
+	box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.3), 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+figcaption {
+	margin: 2em auto;
+	margin: 2rem auto;
+	max-width: 25em;
+	font-size: 0.9em;
+	font-size: 0.9rem;
+	text-align: left;
+}
+
+/* code blocks */
+.page-content > pre {
+	max-width: none;
+	margin: 1em -2em;
+	margin: 1rem -2rem;
+}
+pre {
+	background: #f8f8f8;
+	border-style: solid;
+	border-width: 1px 0;
+	border-color: #f1f1f1;
+	text-align: center;
+	text-shadow: 1px 1px 0px #FFF;
+}
+pre code {
+	display: block; 
+	margin: 0;
+	padding: 1em 2em;
+	text-align: left;
+}
+
+@media screen and (min-width: 54em) {
+	pre code {
+		min-width: 50rem;
+		display: inline-block;
+	}
+}
+
+/* IE fallback */
+.no-mediaqueries.display-table pre code {
+	min-width: 800px;
+	display: inline-block;
+}
+.no-display-table.no-mediaqueries .page-content pre {
+	display: block;
+	text-align: left;
+}
+.no-display-table.no-mediaqueries .page-content pre code {
+	display: block;
+}

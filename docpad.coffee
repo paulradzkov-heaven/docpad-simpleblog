@@ -38,7 +38,9 @@ docpadConfig = {
 				'/vendor/normalize.css'
 				'/vendor/h5bp.css'
 				'/css/bettertext.css'
-				'/css/style.css'
+				'http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700|PT+Sans+Caption:700&amp;subset=latin,cyrillic'
+				'/css/github.css'
+				'/css/template.css'
 			]
 
 			# The website's scripts
@@ -71,6 +73,12 @@ docpadConfig = {
 		getPreparedKeywords: ->
 			# Merge the document keywords with the site keywords
 			@site.keywords.concat(@document.keywords or []).join(', ')
+
+	collections:
+		articles: ->
+			# get all posts by «kind», sort them by «created_at» and set to all «layout»
+			@getCollection("html").findAllLive({publish:true},[{created_at:-1}]).on "add", (model) ->
+				model.setMetaDefaults({layout:"article"})
 
 
 	# =================================

@@ -27,7 +27,7 @@
 	<![endif]-->
 
 	<header></header>
-	<article>
+	<article class="page-content" role="main">
 		<%- @content %>
 	</article>
 	<footer></footer>

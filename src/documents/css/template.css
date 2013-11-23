@@ -63,6 +63,35 @@ nav a {
 	text-decoration: none;
 }
 
+/* demo-button */
+.button {
+	display: inline-block;
+	border: 2px solid;
+	border-radius: 3px;
+	padding: .5em 1.5em;
+	font-family: 'PT Sans Caption', 'Roboto', sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	-webkit-box-shadow: inset 0 0 0 0 #2b9aff, 0 0px 0px -2px rgba(0, 0, 0, 0.2);
+	   -moz-box-shadow: inset 0 0 0 0 #2b9aff, 0 0px 0px -2px rgba(0, 0, 0, 0.2);
+	        box-shadow: inset 0 0 0 0 #2b9aff, 0 0px 0px -2px rgba(0, 0, 0, 0.2);
+	-webkit-transition: 0.5s;
+	   -moz-transition: 0.5s;
+	    -ms-transition: 0.5s;
+	     -o-transition: 0.5s;
+	        transition: 0.5s;
+}
+.button:hover {
+	color: #FFF !important;
+	border-color: #2b9aff;
+	-webkit-box-shadow: inset 0 0 0 4rem #2b9aff, 0 3px 3px -2px rgba(0, 0, 0, 0.2);
+	   -moz-box-shadow: inset 0 0 0 4rem #2b9aff, 0 3px 3px -2px rgba(0, 0, 0, 0.2);
+	        box-shadow: inset 0 0 0 4rem #2b9aff, 0 3px 3px -2px rgba(0, 0, 0, 0.2);
+}
+.no-boxshadow .button:hover {
+	background: #2b9aff;
+}
+
 /* Layout */
 body {
 	border-top: 5px solid #000;
@@ -81,6 +110,62 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.page-header {
+	border-bottom: 5px solid #000;
+	padding: 2em;
+	text-align: center;
+	color: #FFF;
+	background-color: #000;
+	/* image © Raymo-Photography http://500px.com/Raymo-Photography */
+	background-image: url(http://ppcdn.500px.org/26300861/37055fb1a4118717b54bc08b5d6d7ae1d73344bf/5.jpg);
+	background-position: 50% 50%;
+	-webkit-background-size: cover;
+	        background-size: cover;
+	-webkit-box-shadow: inset 0 0 0 100em rgba(0,0,0,0.3);
+	   -moz-box-shadow: inset 0 0 0 100em rgba(0,0,0,0.3);
+	        box-shadow: inset 0 0 0 100em rgba(0,0,0,0.3);
+	text-shadow: 0 0 10px #000;
+}
+.page-header a:link    {color: #57AFFF;}
+.page-header a:visited {color: #E2ABFF;}
+.page-header a:hover   {color: #C1DFFA;}
+.page-header a:active  {color: #C1DFFA;}
+
+.page-header h1,
+.page-header h2 {
+	margin-top: 0;
+	
+}
+.page-header h1 {
+	margin-bottom: 0.2em;
+}
+.page-header h2 {
+	margin-bottom: 1em;
+}
+.page-header .logo {
+	max-width: 100px;
+	max-height: 100px;
+	margin-bottom: 1em;
+}
+@media screen and (min-width: 54em) {
+	.dtb {
+		display: table;
+		width: 100%;
+	}
+	.dtbc-logo {
+		width: 120px;
+	}
+	.dtbc-logo,
+	.dtbc-title,
+	.dtbc-options {
+		display: table-cell;
+		padding: 0.5em;
+		vertical-align: top;
+		text-align: left;
+	}
+}
+
 
 .post-tizer {
 	margin: 4em 0 8em;
@@ -173,14 +258,12 @@ pre code {
 	font-size: 0.8rem;
 }
 .meta-data li {
-	position: relative;
 	display: inline-block;
-	margin-right: 3em;
+	margin-right: 1.5em;
 }
 .meta-data li:after {
 	content: '/';
-	position: absolute;
-	right: -1.7em;
+	margin: 0 0 0 1.5em;
 	color: #AAA;
 }
 .meta-data li:last-child:after {
@@ -263,4 +346,53 @@ pre code {
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
+}
+
+/* navigation */
+.site-navigation {
+
+}
+.nav-icon {
+	display: block;
+	position: absolute;
+	z-index: 1;
+	font-size: 1.5em;
+	margin: 1em 0 1em 1em;
+	width: 2em;
+	height: 2em;
+	text-align: center;
+	line-height: 1;
+	border: 0;
+	background: #000;
+	color: #FFF;
+	outline: none;
+	-webkit-border-radius: 2px;
+	   -moz-border-radius: 2px;
+	        border-radius: 2px;
+	-webkit-box-shadow: 0.2em 0.2em 0.3em -0.1em rgba(0, 0, 0, 0.4), inset 0 0 0 0 #0877db;
+	   -moz-box-shadow: 0.2em 0.2em 0.3em -0.1em rgba(0, 0, 0, 0.4), inset 0 0 0 0 #0877db;
+	        box-shadow: 0.2em 0.2em 0.3em -0.1em rgba(0, 0, 0, 0.4), inset 0 0 0 0 #0877db;
+	-webkit-transition: all 0.5s;
+	   -moz-transition: all 0.5s;
+	    -ms-transition: all 0.5s;
+	     -o-transition: all 0.5s;
+	        transition: all 0.5s;
+}
+.nav-icon:hover {
+	-webkit-box-shadow: 0.2em 0.2em 0.3em -0.1em rgba(0, 0, 0, 0.4), inset 0 0 0 1em #0877db;
+	   -moz-box-shadow: 0.2em 0.2em 0.3em -0.1em rgba(0, 0, 0, 0.4), inset 0 0 0 1em #0877db;
+	        box-shadow: 0.2em 0.2em 0.3em -0.1em rgba(0, 0, 0, 0.4), inset 0 0 0 1em #0877db;
+}
+.no-boxshadow .nav-icon:hover {
+	background-color: #0877db;
+}
+.nav-icon:active {
+	-webkit-box-shadow: inset 0.1em 0.1em 0.1em 0em rgba(0, 0, 0, 0.4), inset 0 0 0 1em #0877db;
+	   -moz-box-shadow: inset 0.1em 0.1em 0.1em 0em rgba(0, 0, 0, 0.4), inset 0 0 0 1em #0877db;
+	        box-shadow: inset 0.1em 0.1em 0.1em 0em rgba(0, 0, 0, 0.4), inset 0 0 0 1em #0877db;
+	-webkit-transition: all 0.1s;
+	   -moz-transition: all 0.1s;
+	    -ms-transition: all 0.1s;
+	     -o-transition: all 0.1s;
+	        transition: all 0.1s;
 }

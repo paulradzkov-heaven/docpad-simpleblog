@@ -26,7 +26,14 @@
 	<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->
 
-	<header></header>
+	<% if ((!@document.kind) or (@document.kind != 'article')) : %>
+		<header class="page-header content-width">
+			<%- @partial('hero') %>
+		</header>
+	<% end %>
+	<nav class="site-navigation" id="sticker">
+		<a href="/" class="nav-icon"></a>
+	</nav>
 	<aside class="article-meta content-width">
 		<ul class="meta-data">
 			<% if (@document.created_at) : %>

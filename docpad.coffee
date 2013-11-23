@@ -37,14 +37,14 @@ docpadConfig = {
 			styles: [
 				'/vendor/normalize.css'
 				'/vendor/h5bp.css'
-				'/styles/style.css'
+				'/css/bettertext.css'
+				'/css/style.css'
 			]
 
 			# The website's scripts
 			scripts: [
 				'/vendor/log.js'
-				'/vendor/modernizr.js'
-				'/scripts/script.js'
+				'/js/script.js'
 			]
 
 

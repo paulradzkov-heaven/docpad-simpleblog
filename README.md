@@ -1,4 +1,4 @@
-# [HTML5 Boilerplate](http://html5boilerplate.com/) skeleton for [DocPad](https://github.com/bevry/docpad)
+# [HTML5 Boilerplate](http://html5boilerplate.com/) Blog skeleton for [DocPad](https://github.com/bevry/docpad)
 Bare essentials for building a modern website with best practices
 
 
@@ -9,8 +9,8 @@ Bare essentials for building a modern website with best practices
 1. Clone the project and run the server
 
 	``` bash
-	git clone git://github.com/docpad/html5-boilerplate.docpad.git
-	cd html5-boilerplate.docpad
+	git clone https://github.com/interpaul/docpad-simpleblog.git
+	cd docpad-simpleblog
 	npm install
 	docpad run
 	```

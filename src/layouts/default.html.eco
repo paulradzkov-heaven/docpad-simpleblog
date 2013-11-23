@@ -60,6 +60,12 @@
 			<% end %>
 		</p>
 	</footer>
+	<% if (@document.kind == 'article') : %>
+	<nav class="read-next">
+		<h4 class="read-next-title">Read Also:</h4>
+		<%- @getNavLinks() %>
+	</nav>
+	<% end %>
 
 	<!-- jQuery -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>

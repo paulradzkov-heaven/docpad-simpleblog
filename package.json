@@ -41,7 +41,8 @@
     "docpad-plugin-cleanurls": "~2.5.1",
     "docpad-plugin-highlightjs": "~2.1.8",
     "docpad-plugin-moment": "~2.0.2",
-    "docpad-plugin-tagging": "~2.0.2"
+    "docpad-plugin-tagging": "~2.0.2",
+    "docpad-plugin-navlinks": "~2.0.2"
   },
   "devDependencies": {
     "docpad-plugin-livereload": "~2.5.3"

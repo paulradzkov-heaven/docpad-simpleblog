@@ -94,7 +94,7 @@ docpadConfig = {
 		hasReadMore: (content) ->
 			content and ((content.search @cutTag) isnt -1)
 
-			
+
 	collections:
 		articles: ->
 			# get all posts by «kind», sort them by «created_at» and set to all «layout»
@@ -106,6 +106,11 @@ docpadConfig = {
 			@getCollection("html").findAllLive({url: $startsWith: '/help'},[{created_at:-1}]).on "add", (model) ->
 				model.setMetaDefaults({layout:"default"})
 
+	# Plugins configurations
+	plugins:
+		navlinks:
+			collections:
+				articles: -1
 
 	# =================================
 	# DocPad Events

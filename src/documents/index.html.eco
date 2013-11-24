@@ -29,7 +29,7 @@ title: 'What now?'
 <h1>Manuals</h1>
 
 <div class="blogroll">
-    <% for page in @getCollection("help").toJSON(): %>
+    <% for page in @getCollection("docs").toJSON(): %>
         <section class="post-tizer <%= if page.id is @document.id then 'active' else 'inactive' %>">
             <h2><a href="<%= page.url %>"><%= page.title %></a></h2>
         </section>

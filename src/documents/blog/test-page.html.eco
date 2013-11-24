@@ -1,0 +1,15 @@
+--- 
+layout: default
+kind: article
+title: "Test Page"
+description: "test page with all elements"
+created_at: 2013-11-24
+publish: true
+disqusid: sample-post
+tags: [html, css, typography]
+---
+
+<p>This is blank post page. Copy and rename it to start writing post.</p>
+
+<!-- cut -->
+

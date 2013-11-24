@@ -20,8 +20,12 @@
 	<script src="/vendor/modernizr.js"></script>
 
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	
+	<% if (@document.custom_css) : %>
+	<link href='<%- @document.url %>/<%- @document.custom_css %>' rel='stylesheet' type='text/css'>
+	<% end %>
 </head>
-<body>
+<body class="layout-<%- @document.kind %>">
 	<!--[if lt IE 7]>
 	<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->
@@ -32,24 +36,37 @@
 		</header>
 	<% end %>
 	<nav class="site-navigation" id="sticker">
-		<a href="/" class="nav-icon"></a>
+		<% if (@document.kind == 'article') : %>
+			<a href="/" class="nav-icon"></a>
+		<% else : %>
+			<div class="mainmenu content-width">
+				<ul class="nav-list">
+					<li><a href="/"><span>Blog</span></a></li>
+					<li><a href="/docs"><span>Documentation</span></a></li>
+					<li><a href="https://github.com/interpaul/docpad-simpleblog/issues"><span>Issues</span></a></li>
+					<li><a href="https://github.com/interpaul/docpad-simpleblog"><span>Source Code</span></a></li>
+				</ul>
+			</div>
+		<% end %>
 	</nav>
 	<aside class="article-meta content-width">
-		<ul class="meta-data">
-			<% if (@document.created_at) : %>
-			<li class="date"><%= @moment(@document.created_at).lang('ru').format('DD MMMM YYYY') %></li>
-			<% end %>
-			<% if ((@site.disqus_shortname) and (@document.disqusid)) : %>
-			<li class="comments"><a href="<%= @document.path %>#disqus_thread" data-disqus-identifier="<%= @document.disqusid %>" >Комментарии</a></li>
-			<% end %>
-			<% if (@document.tags) : %>
-			<li class="tags-list">
-				<% for tag in @document.tags : %>
-					<a class="label-tag" href="<%= @getTagUrl(tag) %>"><%= tag %></a>
+		<div class="article-meta-container">
+			<ul class="meta-data">
+				<% if (@document.created_at) : %>
+				<li class="date"><%= @moment(@document.created_at).lang('ru').format('DD MMMM YYYY') %></li>
 				<% end %>
-			</li>
-			<% end %>
+				<% if ((@site.disqus_shortname) and (@document.disqusid)) : %>
+				<li class="comments"><a href="<%= @document.path %>#disqus_thread" data-disqus-identifier="<%= @document.disqusid %>" >Комментарии</a></li>
+				<% end %>
+				<% if (@document.tags) : %>
+				<li class="tags-list">
+					<% for tag in @document.tags : %>
+						<a class="label-tag" href="<%= @getTagUrl(tag) %>"><%= tag %></a>
+					<% end %>
+				</li>
+				<% end %>
 		</ul>
+		</div>
 	</aside>
 	<article class="page-content content-width" role="main">
 		<% if (@document.kind == 'article') : %>

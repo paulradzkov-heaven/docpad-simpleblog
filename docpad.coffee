@@ -106,9 +106,9 @@ docpadConfig = {
 			@getCollection("html").findAllLive({kind:'article',publish:true},[{created_at:-1}]).on "add", (model) ->
 				model.setMetaDefaults({layout:"default"})
 
-		help: ->
+		docs: ->
 			# get all posts by «url», sort them by «created_at» and set to all «layout»
-			@getCollection("html").findAllLive({url: $startsWith: '/help'},[{created_at:-1}]).on "add", (model) ->
+			@getCollection("html").findAllLive({url: $startsWith: '/docs'},[{created_at:-1}]).on "add", (model) ->
 				model.setMetaDefaults({layout:"default"})
 
 	# Plugins configurations

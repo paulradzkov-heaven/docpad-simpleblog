@@ -42,3 +42,26 @@
 			</script>
 		<% end %>
 	<% end %>
+
+	<!-- AddThis Smart Layers BEGIN -->
+	<!-- Go to http://www.addthis.com/get/smart-layers to customize -->
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5077f8b93c56f7a0"></script>
+	<script type="text/javascript">
+	  addthis.layers({
+	    'theme' : 'transparent',
+	    'responsive' : {
+	      'maxWidth' : '979px',
+	      'minWidth' : '0px'
+	    },
+	    'share' : {
+	      'position' : 'right',
+	      'services' : 'google_plusone_share,twitter,facebook,more',
+	      'postShareTitle' : 'Thanks for sharing!',
+	      'postShareFollowMsg' : 'Follow me',
+	      'postShareRecommendedMsg' : 'Recommended for you',
+	      'desktop' : true,
+	      'mobile' : true,
+	    }
+	  });
+	</script>
+	<!-- AddThis Smart Layers END -->

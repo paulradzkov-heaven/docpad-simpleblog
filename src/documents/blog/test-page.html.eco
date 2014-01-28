@@ -9,7 +9,138 @@ disqusid: sample-post
 tags: [html, css, typography]
 ---
 
-<p>This is blank post page. Copy and rename it to start writing post.</p>
+<p>This is test page with a lot of elements.</p>
 
 <!-- cut -->
 
+<h1>What is Getting Real?</h1>
+<p>Want to build a successful web app? Then it's time to Get Real. Getting Real is a smaller, faster, better way to build software.</p>
+<ul>
+	<li>Getting Real is about skipping all the stuff that represents real (charts, graphs, boxes, arrows, schematics, wireframes, etc.) and actually building the real thing.</li>
+	<li>Getting real is less. Less mass, less software, less features, less paperwork, less of everything that's not essential (and most of what you think is essential actually isn't).</li>
+	<li>Getting Real is staying small and being agile.</li>
+	<li>Getting Real starts with the interface, the real screens that people are going to use. It begins with what the customer actually experiences and builds backwards from there. This lets you get the interface right before you get the software wrong.</li>
+	<li>Getting Real is about iterations and lowering the cost of change. Getting Real is all about launching, tweaking, and constantly improving which makes it a perfect approach for web-based software.</li>
+	<li>Getting Real delivers just what customers need and eliminates anything they don't.</li>
+</ul>
+<h2>The benefits of Getting Real</h2>
+<figure>
+	<img src="http://placehold.it/600x400" alt="" width="600" height="400" />
+	<figcaption>
+		<p>Images goes in <code>figure</code> tag.</p>
+		<p>Captions goes in  <code>figcaption</code> tag.</p>
+	</figcaption>
+</figure>
+<p>Getting Real delivers better results because it forces you to deal with the actual problems you're trying to solve instead of your ideas about those problems. It forces you to deal with reality.</p>
+<p>Getting Real foregoes functional specs and other transitory documentation in favor of building real screens. A functional spec is make-believe, an illusion of agreement, while an actual web page is reality. That's what your customers are going to see and use. That's what matters. Getting Real gets you there faster. And that means you're making software decisions based on the real thing instead of abstract notions.</p>
+<p>Finally, Getting Real is an approach ideally suited to web-based software. The old school model of shipping software in a box and then waiting a year or two to deliver an update is fading away. Unlike installed software, web apps can constantly evolve on a day-to-day basis. Getting Real leverages this advantage for all its worth.</p>
+<blockquote>
+	<h3>How To Write Vigorous Software</h3>
+	<p>Vigorous writing is concise. A sentence should contain no unnecessary words, a paragraph no unnecessary sentences, for the same reason that a drawing should have no unnecessary lines and a machine no unnecessary parts. This requires not that the writer make all sentences short or avoid all detail and treat subjects only in outline, but that every word tell.</p>
+	<cite>—From <a href="http://www.bartleby.com/141/strunk5.html">&quot;The Elements of Style&quot;</a> by William Strunk Jr.</cite>
+</blockquote>
+<h2>No more bloat</h2>
+<p>The old way: a lengthy, bureaucratic, we're-doing-this-to-cover-our-asses process. The typical result: bloated, forgettable software dripping with mediocrity. Blech.</p>
+<hr />
+<h2>Getting Real gets rid of...</h2>
+<div class="justasamplewrapper">
+	<p><strong>Build half a product, not a half-ass product</strong></p>
+	<p>Beware of the "everything but the kitchen sink" approach to web app development. Throw in every decent idea that comes along and you'll just wind up with a half-assed version of your product. What you really want to do is build half a product that kicks ass.</p>
+	<p>Stick to what's truly essential. Good ideas can be tabled. <strong>Take whatever you think your product should be and cut it in half.</strong> Pare features down until you're left with only the most essential ones. Then do it again.</p>
+	<p>With Basecamp, we started with just the messages section. We knew that was the heart of the app so we ignored milestones, to-do lists, and other items for the time being. That let us base future decisions on real world usage instead of hunches.</p>
+	<p>Start off with a lean, smart app and let it gain traction. Then you can start to add to the solid foundation you've built.</p>
+</div>
+<ul>
+	<li>Timelines that take months or even years</li>
+	<li>Pie-in-the-sky functional specs</li>
+	<li>Scalability debates</li>
+	<li>Interminable staff meetings</li>
+	<li>The &quot;need&quot; to hire dozens of employees</li>
+	<li>Meaningless version numbers</li>
+	<li>Pristine roadmaps that predict the perfect future</li>
+	<li>Endless preference options</li>
+	<li>Outsourced support</li>
+	<li>Unrealistic user testing</li>
+	<li>Useless paperwork</li>
+	<li>Top-down hierarchy</li>
+	<li>Top-down hierarchy</li>
+</ul>
+<p>You don't need tons of money or a huge team or a lengthy development cycle to build great software. Those things are the ingredients for slow, murky, changeless applications. Getting real takes the opposite approach.</p>
+<h2>In this book we'll show you...</h2>
+<ul>
+	<li>The importance of having a philosophy</li>
+	<li>Why staying small is a good thing</li>
+	<li>How to build less</li>
+	<li>How to get from idea to reality quickly</li>
+	<li>How to staff your team</li>
+	<li>Why you should design from the inside out</li>
+	<li>Why writing is so crucial</li>
+	<li>Why you should underdo your competition</li>
+	<li>How to promote your app and spread the word</li>
+	<li>Secrets to successful support</li>
+	<li>Tips on keeping momentum going after launch</li>
+	<li>...and lots more</li>
+</ul>
+<p>The focus is on big-picture ideas. We won't bog you down with detailed code snippets or css tricks. We'll stick to the major ideas and philosophies that drive the Getting Real process.</p>
+<h2>Is this book for you?</h2>
+<div style="float:left; margin:0 2em 2em 0;">
+	<img src="http://placehold.it/300x200" alt="sample image" />
+</div>
+<p>You're an entrepreneur, designer, programmer, or marketer working on a big idea.</p>
+<p>You realize the old rules don't apply anymore. Distribute your software on cd-roms every year? How 2002. Version numbers? Out the window. You need to build, launch, and tweak. Then rinse and repeat.</p>
+<p>Or maybe you're not yet on board with agile development and business structures, but you're eager to learn more.</p>
+<p><strong>If this sounds like you, then this book is for you.</strong></p>
+<p>Note: While this book's emphasis is on building a web app, a lot of these ideas are applicable to non-software activities too. The suggestions about small teams, rapid prototyping, expecting iterations, and many others presented here can serve as a guide whether you're starting a business, writing a book, designing a web site, recording an album, or doing a variety of other endeavors. Once you start Getting Real in one area of your life, you'll see how these concepts can apply to a wide range of activities.</p>
+<figure>
+	<img src="http://placehold.it/1600x800" alt="large sample image" />
+	<figcaption>large sample image</caption>
+</figure>
+<h2>Build software for yourself</h2>
+<div>
+	<img src="http://placehold.it/300x200" alt="sample image" style="float:left; margin:0 2em 2em 0;" />
+</div>
+<p>A great way to build software is to start out by solving your own problems. You'll be the target audience and you'll know what's important and what's not. That gives you a great head start on delivering a breakout product.</p>
+<p>The key here is understanding that you're not alone. If you're having this problem, it's likely hundreds of thousands of others are in the same boat. There's your market. Wasn't that easy?</p>
+<p>Basecamp originated in a problem: As a design firm we needed a simple way to communicate with our clients about projects. We started out doing this via client extranets which we would update manually. But changing the html by hand every time a project needed to be updated just wasn't working. These project sites always seemed to go stale and eventually were abandoned. It was frustrating because it left us disorganized and left clients in the dark.</p>
+<p class="incut fl sep loud">Take whatever you think your product should be and cut it in half.</p>
+<p>So we started looking at other options. Yet every tool we found either 1) didn't do what we needed or 2) was bloated with features we didn't need — like billing, strict access controls, charts, graphs, etc. We knew there had to be a better way so we decided to build our own.</p>
+<p class="incut fr frame loud">Create a great app and then worry about what to do once it's wildly successful.</p>
+<p>When you solve your own problem, you create a tool that you're passionate about. And passion is key. Passion means you'll truly use it and care about it. And that's the best way to get others to feel passionate about it too.</p>
+<blockquote>
+	<h3>Scratching your own itch</h3>
+	<p>The Open Source world embraced this mantra a long time ago — they call it &quot;scratching your own itch.&quot; For the open source developers, it means they get the tools they want, delivered the way they want them. But the benefit goes much deeper.</p>
+	<p>As the designer or developer of a new application, you're faced with hundreds of micro-decisions each and every day: blue or green? One table or two? Static or dynamic? Abort or recover? How do we make these decisions? If it's something we recognize as being important, we might ask. The rest, we guess. And all that guessing builds up a kind of debt in our applications — an interconnected web of assumptions.</p>
+	<p>As a developer, I hate this. The knowledge of all these small-scale timebombs in the applications I write adds to my stress. Open Source developers, scratching their own itches, don't suffer this. Because they are their own users, they know the correct answers to 90% of the decisions they have to make. I think this is one of the reasons folks come home after a hard day of coding and then work on open source: It's relaxing.</p>
+	<cite>—Dave Thomas, <a href="http://www.pragmaticprogrammer.com/">The Pragmatic Programmers</a></cite>
+</blockquote>
+<blockquote>
+	<h3>Born out of necessity</h3>
+	<div style="float:right; margin: 0 0 2em 2em;"><img src="http://placehold.it/120x120" alt="sample image" width="120" height="120" /></div>
+	<p>Campaign Monitor really was born out of necessity. For years we'd been frustrated by the quality of the email marketing options out there. One tool would do x and y but never z, the next had y and z nailed but just couldn't get x right. We couldn't win.</p>
+	<p>We decided to clear our schedule and have a go at building our dream email marketing tool. We consciously decided not to look at what everyone else was doing and instead build something that would make ours and our customer's lives a little easier.</p>
+	<p>As it turned out, we weren't the only ones who were unhappy with the options out there. We made a few modifications to the software so any design firm could use it and started spreading the word. In less than six months, thousands of designers were using Campaign Monitor to send email newsletters for themselves and their clients.</p>
+	<cite>—David Greiner, founder, <a href="http://www.campaignmonitor.com/">Campaign Monitor</a></cite>
+</blockquote>
+<blockquote>
+	<h3>You need to care about it</h3>
+	<p>When you write a book, you need to have more than an interesting story. You need to have a desire to tell the story. You need to be personally invested in some way. If you're going to live with something for two years, three years, the rest of your life, you need to care about it.</p>
+	<cite>—Malcolm Gladwell, author (from <a href="http://www.powells.com/authors/gladwell.html">A Few Thin Slices of Malcolm Gladwell</a>)</cite>
+</blockquote>
+<h1>Have an Enemy</h1>
+<h2>Pick a fight</h2>
+<div class="three-col">
+	<p class="initial-letter">Sometimes the best way to know what your app should be is to know what it shouldn't be. Figure out your app's enemy and you'll shine a light on where you need to go.</p>
+	<p>When we decided to create project management software, we knew Microsoft Project was the gorilla in the room. Instead of fearing the gorilla, we used it as a motivator. We decided Basecamp would be something completely different, the anti-Project.</p>
+	<p class="incut frame loud inverse">Create a great app and then worry about what to do once it's wildly successful.</p>
+	<p>We realized project management isn't about charts, graphs, reports and statistics — it's about communication. It also isn't about a project manager sitting up high and broadcasting a project plan. It's about everyone taking responsibility together to make the project work.</p>
+	
+	<p>Our enemy was the Project Management Dictators and the tools they used to crack the whip. We wanted to democratize project management — make it something everyone was a part of (including the client). Projects turn out better when everyone takes collective ownership of the process.</p>
+	<p><span class="inverse loud">Differentiate yourself from bigger companies by being personal and friendly</span></p>
+	<p>When it came to Writeboard, we knew there were competitors out there with lots of whizbang features. So we decided to emphasize a &quot;no fuss&quot; angle instead. We created an app that let people share and collaborate on ideas simply, without bogging them down with non-essential features. If it wasn't essential, we left it out. And in just three months after launch, over 100,000 Writeboards have been created.</p>
+	<blockquote>
+		<p>When we started on Backpack our enemy was structure and rigid rules. People should be able to organize their information their own way — not based on a series of preformatted screens or a plethora of required form fields.</p>
+		<p>One bonus you get from having an enemy is a very clear marketing message. People are stoked by conflict. And they also understand a product by comparing it to others. With a chosen enemy, you're feeding people a story they want to hear. Not only will they understand your product better and faster, they'll take sides. And that's a sure-fire way to get attention and ignite passion.</p>
+	</blockquote>
+	<p><span class="inverse">Smaller companies are closer to the customer by default.</span></p>
+	<p>Now with all that said, it's also important to not get too obsessed with the competition. Overanalyze other products and you'll start to limit the way you think. Take a look and then move on to your own vision and your own ideas.</p>
+</div>

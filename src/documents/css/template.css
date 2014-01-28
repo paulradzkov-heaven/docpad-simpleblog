@@ -193,6 +193,24 @@ figcaption {
 	text-align: left;
 }
 
+blockquote {
+	margin-top: 4em;
+	margin-top: 4rem;
+	margin-bottom: 4em;
+	margin-bottom: 4rem;
+}
+blockquote:before,
+blockquote:after {
+	content: '';
+	clear: both;
+	display: block;
+	border-bottom: 3px solid #CCC;
+	width: 50%;
+	margin: 2em auto 2em;
+} 
+blockquote + blockquote:before {
+	content: none;
+}
 /* code blocks */
 .content-width > pre {
 	max-width: none;

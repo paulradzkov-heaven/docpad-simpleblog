@@ -98,7 +98,10 @@ docpadConfig = {
 		# Has “cut”?
 		hasReadMore: (content) ->
 			content and ((content.search @cutTag) isnt -1)
-
+		
+		getTagUrl: (tag) ->
+			doc = docpad.getFile({tag:tag})
+			return doc?.get('url') or ''
 
 	collections:
 		articles: ->
@@ -116,6 +119,16 @@ docpadConfig = {
 		navlinks:
 			collections:
 				articles: -1
+		tags:
+			extension: '.html.eco'
+			injectDocumentHelper: (document) ->
+				document.setMeta(
+					layout: 'tagcloud'
+					data:  """
+						<%- @partial('tag', @) %>
+						"""
+				)
+
 
 	# =================================
 	# DocPad Events

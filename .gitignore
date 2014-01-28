@@ -1,6 +1,7 @@
 node_modules/
 out/
 npm-debug.log
+.docpad.db
 
 #################
 ## Eclipse

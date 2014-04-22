@@ -119,6 +119,9 @@ docpadConfig = {
 		navlinks:
 			collections:
 				articles: -1
+		ghpages:
+			deployRemote: 'deploy'
+			deployBranch: 'gh-pages'
 		tags:
 			extension: '.html.eco'
 			injectDocumentHelper: (document) ->
@@ -128,7 +131,7 @@ docpadConfig = {
 						<%- @partial('tag', @) %>
 						"""
 				)
-				
+
 	# =================================
 	# Environments
 

@@ -14,7 +14,7 @@ docpadConfig = {
 		# Specify some site properties
 		site:
 			# The production url of our website. Used in sitemap and rss feed
-			url: "http://website.com"
+			url: "http://interpaul.github.io/docpad-simpleblog"
 
 			# Here are some old site urls that you would like to redirect from
 			oldUrls: [
@@ -128,7 +128,15 @@ docpadConfig = {
 						<%- @partial('tag', @) %>
 						"""
 				)
+				
+	# =================================
+	# Environments
 
+	environments:
+		development:
+			templateData:
+				site:
+					url: 'http://localhost:9778'
 
 	# =================================
 	# DocPad Events

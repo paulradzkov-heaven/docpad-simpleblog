@@ -5,6 +5,6 @@ layout: default
 
 <ul class="related-articles">
 	<% for doc in @getCollection('articles').findAll({tags: '$in': @document.tag}).toJSON(): %>
-	    <li><a href="<%= doc.url %>"><%= doc.title %></a></li>
+	    <li><a href="<%= @getUrl(doc.url) %>"><%= doc.title %></a></li>
 	<% end %>
 </ul>

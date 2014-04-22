@@ -15,9 +15,9 @@
 	<%- @getBlock('meta').toHTML() %>
 
 	<!-- DocPad Styles + Our Own -->
-	<%- @getBlock('styles').add(@site.styles).toHTML() %>
+	<%- @getBlock('styles').add(@getUrl(@site.styles)).toHTML() %>
 
-	<script src="/vendor/modernizr.js"></script>
+	<script src="<%= @getUrl('/vendor/modernizr.js') %>"></script>
 
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 	
@@ -37,12 +37,12 @@
 	<% end %>
 	<nav class="site-navigation" id="sticker">
 		<% if (@document.kind == 'article') : %>
-			<a href="/" class="nav-icon"></a>
+			<a href="<%= @getUrl('/') %>" class="nav-icon"></a>
 		<% else : %>
 			<div class="mainmenu content-width">
 				<ul class="nav-list">
-					<li><a href="/"><span>Blog</span></a></li>
-					<li><a href="/docs"><span>Documentation</span></a></li>
+					<li><a href="<%= @getUrl('/') %>"><span>Blog</span></a></li>
+					<li><a href="<%= @getUrl('/docs') %>"><span>Documentation</span></a></li>
 					<li><a href="https://github.com/interpaul/docpad-simpleblog/issues"><span>Issues</span></a></li>
 					<li><a href="https://github.com/interpaul/docpad-simpleblog"><span>Source Code</span></a></li>
 				</ul>
@@ -56,16 +56,16 @@
 				<li class="date"><%= @moment(@document.created_at).lang('ru').format('DD MMMM YYYY') %></li>
 				<% end %>
 				<% if ((@site.disqus_shortname) and (@document.disqusid)) : %>
-				<li class="comments"><a href="<%= @document.path %>#disqus_thread" data-disqus-identifier="<%= @document.disqusid %>" >Комментарии</a></li>
+				<li class="comments"><a href="<%= @getUrl(@document.path) %>#disqus_thread" data-disqus-identifier="<%= @document.disqusid %>" >Комментарии</a></li>
 				<% end %>
 				<% if (@document.tags) : %>
 				<li class="tags-list">
 					<% for tag in @document.tags : %>
-						<a class="label-tag" href="<%= @getTagUrl(tag) %>"><%= tag %></a>
+						<a class="label-tag" href="<%= @getUrl(@getTagUrl(tag)) %>"><%= tag %></a>
 					<% end %>
 				</li>
 				<% end %>
-		</ul>
+			</ul>
 		</div>
 	</aside>
 	<article class="page-content content-width" role="main">

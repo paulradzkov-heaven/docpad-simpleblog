@@ -14,7 +14,7 @@ docpadConfig = {
 		# Specify some site properties
 		site:
 			# The production url of our website. Used in sitemap and rss feed
-			url: "http://interpaul.github.io/docpad-simpleblog"
+			url: "http://paulradzkov.github.io/docpad-simpleblog"
 
 			# Here are some old site urls that you would like to redirect from
 			oldUrls: [
@@ -88,7 +88,7 @@ docpadConfig = {
 			tags.concat(tags or []).join(', ')
 
 		# Post part before “cut”
-		cuttedContent: (content) ->            
+		cuttedContent: (content) ->
 			if @hasReadMore content
 				cutIdx = content.search @cutTag
 				content[0..cutIdx-1]
@@ -98,9 +98,9 @@ docpadConfig = {
 		# Has “cut”?
 		hasReadMore: (content) ->
 			content and ((content.search @cutTag) isnt -1)
-		
+
 		getTagUrl: (tag) ->
-			doc = docpad.getFile({tag:tag})
+			doc = @getFile({tag:tag})
 			return doc?.get('url') or ''
 
 	collections:

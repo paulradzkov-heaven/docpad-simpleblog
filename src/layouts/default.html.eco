@@ -43,8 +43,8 @@
 				<ul class="nav-list">
 					<li><a href="<%= @getUrl('/') %>"><span>Blog</span></a></li>
 					<li><a href="<%= @getUrl('/docs') %>"><span>Documentation</span></a></li>
-					<li><a href="https://github.com/interpaul/docpad-simpleblog/issues"><span>Issues</span></a></li>
-					<li><a href="https://github.com/interpaul/docpad-simpleblog"><span>Source Code</span></a></li>
+					<li><a href="https://github.com/paulradzkov/docpad-simpleblog/issues"><span>Issues</span></a></li>
+					<li><a href="https://github.com/paulradzkov/docpad-simpleblog"><span>Source Code</span></a></li>
 				</ul>
 			</div>
 		<% end %>

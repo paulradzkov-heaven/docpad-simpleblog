@@ -9,7 +9,7 @@ Bare essentials for building a modern website with best practices
 1. Clone the project and run the server
 
 	``` bash
-	git clone https://github.com/interpaul/docpad-simpleblog.git
+	git clone https://github.com/paulradzkov/docpad-simpleblog.git
 	cd docpad-simpleblog
 	npm install
 	docpad run
